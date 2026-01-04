@@ -1,0 +1,106 @@
+.App {
+  background-color: rgb(230, 160, 90);
+  height: 100vh;
+  width: 100vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nba-logo {
+  position: absolute;
+  top: 5px;
+  left: -80px;
+  width: 300px;
+  height: auto;
+  z-index: 10;
+}
+
+.hoop-image {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  width: 150px;
+  height: auto;
+  z-index: 10;
+}
+
+.search-bar-container {
+  padding-top: 6vh;
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+  gap: 10px;
+}
+
+.player-stats-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.players-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 60px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.player-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 300px;
+}
+
+
+
+.table-container {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.comparison-table {
+  background-color: rgb(220, 220, 220);
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.comparison-table th {
+  background-color: #1d428a;
+  color: rgb(255, 255, 255);
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.comparison-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+.comparison-table tr:last-child td {
+  border-bottom: none;
+}
+
+.stat-label {
+  font-weight: 600;
+  color: #555 !important;
+  background-color: #f9f9f9;
+}
+
+.comparison-table tr:hover {
+  background-color: #f1f1f1;
+}
