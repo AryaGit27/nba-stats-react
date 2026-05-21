@@ -1,6 +1,6 @@
 .App {
   background-color: rgb(230, 160, 90);
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -58,8 +58,6 @@
   flex: 1;
   min-width: 300px;
 }
-
-
 
 .table-container {
   margin-top: 30px;

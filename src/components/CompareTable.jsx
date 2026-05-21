@@ -35,8 +35,11 @@ function CompareTable({ player1, player2 }) {
                 </thead>
                 <tbody>
                     {stats.map(stat => {
-                        const aValue = player1[stat.key];
-                        const bValue = player2[stat.key];
+                        let aValue = player1[stat.key];
+                        let bValue = player2[stat.key];
+
+                        if (aValue === "NA") aValue = 0;
+                        if (bValue === "NA") bValue = 0;
 
                         return (
                             <tr key={stat.key}>

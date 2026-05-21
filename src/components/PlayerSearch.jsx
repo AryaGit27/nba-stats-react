@@ -1,9 +1,6 @@
 import { useState } from "react";
-import usePlayers from "../hooks/usePlayers";
-
-function PlayerSearch({ selectedPlayer, onSelect, onClear }) {
+function PlayerSearch({ players, selectedPlayer, onSelect, onClear }) {
     const [query, setQuery] = useState("");
-    const players = usePlayers();
 
 
     const filteredPlayers = players.filter(player => {
@@ -45,7 +42,7 @@ function PlayerSearch({ selectedPlayer, onSelect, onClear }) {
                         border: "1px solid black",
                         borderRadius: "4px",
                         maxHeight: "120px",
-                        overflowY: "auto",
+                        overflowY: "scroll",
                         width: "200px",
                         position: "absolute",
                         background: "#fff",

@@ -2,9 +2,9 @@ function PlayerStats({ player }) {
 
     if (!player) return null;
 
-    const toPercentage = (val) => {
-        return val ? (Number(val) * 100).toFixed(1) : "0.00";
-    };
+    // const toPercentage = (val) => {
+    //     return val ? (Number(val) * 100).toFixed(1) : "0.00";
+    // };
 
     return (
         <div className="player-stats-container">
