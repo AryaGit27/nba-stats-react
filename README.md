@@ -2,7 +2,7 @@
 
 Live Demo: https://nba-stats-app-smoky.vercel.app/
 
-A React + Vite application that allows a user to search for two different players and view each of their season averages (2024-2025) side-by-side.
+A React + Vite application that allows a user to search for two different players and view each of their season averages (since 1979-80 season) side-by-side.
 
 Features:
 - player search with prefix matching
