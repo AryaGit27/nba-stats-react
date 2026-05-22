@@ -1,0 +1,24 @@
+name: CI Pipeline
+
+# 1. The Trigger: When should this run?
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+# 2. The Jobs: What exactly are we doing?
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # Step B: Build the Docker Image
+      # This ensures your Dockerfile isn't broken by the new code
+      - name: Build Image
+        run: docker build -t statsappimage:latest .
